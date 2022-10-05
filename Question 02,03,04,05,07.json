@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "2cfc2d0f-c924-40ce-a297-309e6ee9575e",
+		"name": "s20001346",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23252685"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.variables.set(\"emp_name\",\"A.S.Perera\");\r",
+									"pm.variables.set(\"address\",\"Nawala\");\r",
+									"\r",
+									"console.log(pm.variables.get(\"address\"));\r",
+									"\r",
+									"\r",
+									"\r",
+									"pm.globals.set(\"postal_code\",\"71000\");\r",
+									"pm.globals.set(\"City\",\"Kegalle\");\r",
+									"\r",
+									"console.log(pm.globals.get(\"City\"));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://reqres.in/api/users?delay=3",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "delay",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"email\":\"eve.holt@reqres.in\",\r\n\"password\":\"cityslicka\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/login"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.variables.set(\"emp_name\",\"A.S.Perera\");",
+					"pm.variables.set(\"address\",\"Nawala\");",
+					"",
+					"console.log(pm.variables.get(\"address\"))",
+					"",
+					"",
+					"",
+					"pm.globals.set(\"postal_code\",\"71000\");",
+					"pm.globals.set(\"City\",\"Kegalle\");",
+					"",
+					"console.log(pm.globals.get(\"city\"))",
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "endpoint",
+			"value": "api/login",
+			"type": "string"
+		},
+		{
+			"key": "email",
+			"value": "eve.holt@reqres.in",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "cityslicka",
+			"type": "string"
+		}
+	]
+}

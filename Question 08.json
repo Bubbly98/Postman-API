@@ -1,0 +1,64 @@
+{
+	"id": "affad16d-3eab-42ab-80b5-12c218ffa0e7",
+	"name": "s20001346",
+	"timestamp": "2022-09-10T05:27:40.627Z",
+	"collection_id": "23252685-2cfc2d0f-c924-40ce-a297-309e6ee9575e",
+	"folder_id": 0,
+	"environment_id": "23252685-e32c7bde-8277-4654-883d-6cd74d316ee0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b00d8165-dfe9-4ec5-900b-9dccdac6432e",
+			"name": "New Request",
+			"time": 3368,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3400,
+				3368
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "a379f926-a0bf-42e6-90f5-b906191a9532",
+			"name": "New Request",
+			"time": 382,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				377,
+				382
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		}
+	],
+	"count": 2,
+	"totalTime": 7527,
+	"collection": {
+		"requests": [
+			{
+				"id": "b00d8165-dfe9-4ec5-900b-9dccdac6432e",
+				"method": "GET"
+			},
+			{
+				"id": "a379f926-a0bf-42e6-90f5-b906191a9532",
+				"method": "POST"
+			}
+		]
+	}
+}
